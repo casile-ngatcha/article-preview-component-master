@@ -1,0 +1,54 @@
+@media (min-width: 768px) {
+
+    /* --- Desktop Container & Grid layout --- */
+    .container {
+        max-width: 730px;
+        display: flex;
+    }
+
+    .image {
+        width: 40%;
+        height: auto;
+    }
+
+    .main {
+        width: 60%;
+        padding: 2.5rem 2.5rem 1.5rem 2.5rem;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+        margin-bottom: 1rem;
+    }
+
+    .para {
+        font-size: 0.8125rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* --- Desktop Floating Tooltip Popup --- */
+    .popup {
+        bottom: 75px;
+        left: auto;
+        right: -45px;
+        width: 248px;
+        padding: 1rem 2rem;
+        border-radius: 10px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        gap: 1rem;
+    }
+
+    /* Little arrow pointer at the bottom of the desktop popup tooltip */
+    .popup::after {
+        content: '';
+        position: absolute;
+        bottom: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-width: 10px 10px 0;
+        border-style: solid;
+        border-color: hsl(217, 19%, 35%) transparent;
+        display: block;
+        width: 0;
+    }
+}
